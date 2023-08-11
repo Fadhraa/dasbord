@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&family=Nunito+Sans&family=Oswald&display=swap" rel="stylesheet">
+    <title>Todolist</title>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #212121;
+    width: 350px;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    display: block;
+
+}
+#profil{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+   
+}
+#profil .imgprofil{
+    width: 175px;
+    height: 175px;
+    background-color: white;
+    border-radius: 100%;
+}
+#profil label{
+    margin-top: 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.list-nav{
+    margin-top: 100px;
+}
+.list-nav ul li a{
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    font-family:'Mukta', sans-serif; ;
+}
+nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+
+nav ul li:nth-child(1):hover{
+    background-color: #FB2576;
+}
+nav ul li:nth-child(2):hover{
+    background-color: #0079FF;
+}
+.container{
+    float: right;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.Title{
+    color: black;
+    margin-top: 60px;
+    margin-left: 400px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Title h4{
+    font-size: 30px;
+}
+.dashboard{
+    width: 74vw;
+    margin-top: 40px;
+    margin-left: 380px;
+    float: left;
+    font-family: 'Lato', sans-serif;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color:#FB2576 ;
+    
+}
+.dashboard >h3{
+    font-size: 28px;
+}
+.study-main{
+    display: flex;
+}
+.study-main> p {
+    margin-top: 10px;
+    background-color: #d9d7d7a8;
+    padding: 30px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+#project{
+    margin-top: 20px;
+}
+#project h3{
+    font-size: 28px;
+}
+.container-card{
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    background-color:white;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-right: 30px;
+    padding: 10px 10px 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+.card img{
+    width: 320px;
+    height: 150px;
+    border-radius: 20px;
+}
+.card .description{
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+.description a{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.description p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+#contact{
+    margin-top: 20px;
+}
+.tengah{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-container{
+    display: flex;
+    margin-top: 20px;
+    background-image: radial-gradient(circle at 68.3% -18.3%, #ff8af7 0, #ff7dfb 16.67%, #ff6bf9 33.33%, #f253f2 50%, #c93eeb 66.67%, #a135e9 83.33%, #7737eb 100%);    
+    width: 600px;
+}
+.list-contact{
+
+    display: flex;
+    flex-direction: column;
+    }
+.list-contact img{
+    margin-top: 10px;
+    width: 80px;
+}
+.img-contact{
+    width: 41   0px;
+    padding: 10px 10px 10px 10px;
+    margin-left: 30px;
+    background:linear-gradient(-45deg, #EC05C1 10%, #FEDA75 90%);
+}
+.img-contact img{
+    width: 400px;
+}
+</style>
+</head>
+<body>
+    <main>
+        <nav>
+            <div id="profil">
+                <div class="imgprofil"></div>
+                <label>Idolafadhra212@gmail.com</label>
+            </div>
+            <div class="list-nav">
+                <ul>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">To do list</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="Title">
+                <h4>Fadhra Dzaki</h4>
+                <p> junior web developer </p>
+                <p> menciptakan pengalaman web yang menakjubkan</p>
+            </div>
+            <div class="dashboard">
+                <h3>Study</h3>
+                <div class="line"></div>
+                <div class="study-main">
+                    <p>Sma Negeri 1 sampang</p>
+                    <p>Kodland python</p>
+                    <p>Dicoding indonesia</p>
+                </div>
+                <div id="project">
+                    <h3>Project</h3>
+                    <div class="line"></div>
+                    <div class="container-card">
+                        <div class="card">
+                            <img src="img/form login.png" alt="">
+                            <div class="description">
+                                <a href="">Form login</a>
+                                <p>Form login biasa yang di gunakan untuk memasukkan user name dan password</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/kingdom of freedom.png" alt="">
+                            <div class="description">
+                                <a href="">Freedom Knight</a>
+                                <p>Game pixel sederhana original buatan saya</p>
+                            </div>
+                        </div>
+                      
+                        <div class="card">
+                            <img src="img/Marketplace.png" alt="">
+                            <div class="description">
+                                <a href="">Market Place</a>
+                                <p>Coming soon</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact">
+                    <h3>
+                        Contact
+                    </h3>
+                    <div class="line"></div>
+                    <div class="tengah">
+                        <div class="contact-container">
+                            <div class="list-contact">
+                                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="">
+                                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="">
+                                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="">
+                            </div>
+                            <div class="img-contact">
+                                <img src="/to do list/img/instagram.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                  
+                   
+                </div>
+            </div>
+
+           
+        </div>
+        
+    </main>
+    
+</body>
+</html>
